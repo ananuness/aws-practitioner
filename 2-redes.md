@@ -21,15 +21,17 @@ Alguns conceitos importantes:
   controla o tráfego de entrada e saída no nível de sub-rede, é stateless e por
   padrão permite todo tráfego de entrada e saída. Uma ACL só consegue avaliar um pacote quando entra ou sai de uma subrede, ou seja, não consegue definir quais pacotes são permitidos ou bloqueados em uma determinada instância do EC2 dentro
   da subrede, por exemplo;
+
 - **Grupos de segurança:** servem para proteger à nível de instância;
 
-> _A principal diferença entre uma ACL e um grupo de segurança é que o grupo é_
-> _stateful, ou seja, lembra-se das decisões tomadas para pacotes recebidos e a_
-> _ACL verifica sempre quem entra e sai (stateless)._
+  > _A principal diferença entre uma ACL e um grupo de segurança é que o grupo é_
+  > _stateful, ou seja, lembra-se das decisões tomadas para pacotes recebidos e a_
+  > _ACL verifica sempre quem entra e sai (stateless)._
 
 - A tradução de endereços de rede conhecida como **NAT**, é o processo de
   conceder acesso de saída de um recurso privado à internet. Um exemplo é o
   Internet Gateway;
+
 - O **Internet Gateway (IG)** executa um tipo de NAT denominado NAT estático,
   ele aloca um recurso com um IPv4 público, de modo que quando os dados ou
   pacotes saem desse recurso e passam pelo IG, ele muda o IP de origem do IP

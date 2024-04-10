@@ -72,7 +72,7 @@ mitigar **ataques complexos de DDoS**.
 ### AWS WAF
 
 Este serviço ajuda a controlar o tráfego com regras definidas por você que
-bloqueiam padrões de ataque comuns, como injeções SQL ou vulnerabilidade XSS.
+**bloqueiam padrões de ataque comuns**, como injeções SQL ou vulnerabilidade XSS.
 
 ### Amazon GuardDuty
 

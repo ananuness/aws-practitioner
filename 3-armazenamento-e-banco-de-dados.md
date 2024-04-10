@@ -149,11 +149,11 @@ negócio, você pode contar com o Redshift;
   _sistema imutável de registro_;
 - **Amazon Managed Blockchain** para _criar e gerenciar redes de blockchain_ com
   frameworks de código aberto ou quando se tem registros bancários ou financeiros
-  que exigem 100% de imutabilidade
+  que exigem 100% de imutabilidade;
 
 Tem-se ainda os **aceleradores de bancos de dados**, como:
 
-- **Amazon ElastiCache**, que adiciona uma camada de cache para melhorar o tempo
-  de leituras e retorno de dados, _compatível com Memcached e Redis_;
 - **DynamoDB Accelerator (DAX)** como opção para utilizar na
   _camada de cache em conjunto com DynamoDB_;
+- **Amazon ElastiCache**, que adiciona uma camada de cache para melhorar o tempo
+  de leituras e retorno de dados, _compatível com Memcached e Redis_;
