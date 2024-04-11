@@ -24,50 +24,99 @@ Depois, insira a URL do bucket e estará pronto.
 
 Há também outras classes de armazenamento:
 
-- O **S3 Standard** foi projetado para **dados acessados com frequência** e
-  armazenar dados em um **mínimo de três Zonas de Disponibilidade**. Ele fornece
-  alta disponibilidade para objetos. Isso o torna uma boa escolha para diversos
-  casos de uso, como sites, distribuição de conteúdo e _data analytics_. O Amazon
-  S3 Standard tem um **custo mais alto** do que outras storage classes destinadas
-  aos dados acessados com pouca frequência e armazenamento de arquivamento;
+<details>
+  <summary><b>S3 Standard</b></summary>
+  <p>
+    Foi projetado para <b>dados acessados com frequência</b> e armazenar dados 
+    em um <b>mínimo de três Zonas de Disponibilidade</b>. Ele fornece alta 
+    disponibilidade para objetos. Isso o torna uma boa escolha para diversos
+    casos de uso, como sites, distribuição de conteúdo e <i>data analytics</i>. 
+    O Amazon S3 Standard tem um <b>custo mais alto</b> do que outras storage 
+    classes destinadas aos dados acessados com pouca frequência e armazenamento 
+    de arquivamento.
+  </p>
+</details>
 
-- o **S3 Infrequent Acess (S3 Standard-IA)** é ideal para
-  **dados com pouca frequência de acesso, mas que precisam ter alta disponibilidade**
-  **quando necessário**. o S3 Standard-IA tem o mesmo nível de disponibilidade da
-  Amazon S3 Standard, mas com um preço de armazenamento mais baixo e um preço de
-  recuperação mais alto;
+<details>
+  <summary><b>S3 Infrequent Acess (S3 Standard-IA)</b></summary>
+  <p>
+    É ideal para
+    <b>
+    dados com pouca frequência de acesso, mas que precisam ter alta 
+    disponibilidade quando necessário
+    </b>. O S3 Standard-IA tem o mesmo nível de disponibilidade do Amazon S3 
+    Standard, mas com um <b>preço de armazenamento mais baixo</b> e um 
+    <b>preço de recuperação mais alto</b>.
+  </p>
+</details>
 
-- O **S3 One Zone Infrequent Access (S3 One Zone-IA)** armazena dados em
-  **uma única Zona de Disponibilidade**, tem um preço de armazenamento menor do
-  que o Amazon S3 Standard-IA. Isso o torna uma boa storage class nas seguintes
-  condições: economizar custos com armazenamento e reproduzir facilmente seus dados
-  em caso de falha na Zona de Disponibilidade;
+<details>
+  <summary><b>S3 One Zone Infrequent Access (S3 One Zone-IA)</b></summary>
+  <p>
+    Ele armazena dados em <b>uma única Zona de Disponibilidade</b>, tem um preço 
+    de armazenamento menor do que o Amazon S3 Standard-IA. Isso o torna uma boa 
+    storage class nas seguintes condições: 
+    <ul>
+      <li>Economizar custos com armazenamento;</li>
+      <li>
+        Reproduzir facilmente seus dados em caso de falha na Zona de 
+        Disponibilidade;
+      </li>
+    </ul>
+  </p>
+</details>
 
-- No **S3 Intelligent-Tiering**, o S3 **monitora os padrões de acesso dos objetos**.
-  Se você não acessou um objeto por 30 dias consecutivos, o S3 o move
-  automaticamente para o nível de acesso pouco frequente S3 Standard–IA. Se você
-  acessar um objeto no nível de acesso pouco frequente, o S3 o move
-  automaticamente para o nível de acesso frequente S3 Standard;
+<details>
+  <summary><b>S3 Intelligent-Tiering</b></summary>
+  <p>
+    Nesse o S3 <b>monitora os padrões de acesso dos objetos</b>.
+    Se você não acessou um objeto por 30 dias consecutivos, o S3 o move
+    automaticamente para o nível de acesso pouco frequente S3 Standard–IA. Se 
+    você acessar um objeto no nível de acesso pouco frequente, o S3 o move
+    automaticamente para o nível de acesso frequente S3 Standard.
+  </p>
+</details>
 
-- O **S3 Glacier Instant Retrieval** funciona bem para **dados arquivados que**
-  **requerem acesso imediato** e pode recuperar objetos em alguns
-  **milissegundos**;
+<details>
+  <summary><b>S3 Outposts</b></summary>
+  <p>
+    Ele oferece armazenamento de objetos 
+    <b>para o ambiente on-premises do AWS Outposts</b>.
+  </p>
+</details>
 
-- O **S3 Glacier Flexible Retrieval** oferece armazenamento de **baixo custo**
-  projetado para **arquivamento de dados** e é capaz de recuperar objetos em
-  poucos **minutos a horas**;
+<details>
+  <summary><b>S3 Glacier Instant Retrieval</b></summary>
+  <p>
+    Este funciona bem para <b>dados arquivados que requerem acesso imediato</b> 
+    e pode recuperar objetos em alguns <b>milissegundos</b>. É a classe de 
+    armazenamento de arquivos que oferece o <b>terceiro menor custo</b> de 
+    armazenamento para dados de longa duração.
+  </p>
+</details>
 
-  > _As classes do S3 Glacier são projetadas para serem as de menor custo do AWS S3._
+<details>
+  <summary><b>S3 Glacier Flexible Retrieval</b></summary>
+  <p>
+    Oferecendo o <b>segundo menor custo</b> de armazenamento, ele é projetado 
+    para <b>arquivamento de dados</b> e é capaz de recuperar objetos em poucos 
+    <b>minutos a horas</b>.
+  </p>
+</details>
 
-- O **S3 Deep Archive** dá suporte a **retenção de longo prazo** e preservação
-  digital de **dados acessados uma ou duas vezes por ano**. Essa storage class é
-  o armazenamento de **menor custo na nuvem AWS**, com recuperação de dados de
-  **12 a 48 horas**. Todos os objetos dessa storage class são replicados e
-  armazenados em pelo menos **três Zonas de Disponibilidade** geograficamente
-  dispersas;
+<details>
+  <summary><b>S3 Glacier Deep Archive</b></summary>
+  <p>
+    Ele dá suporte a <b>retenção de longo prazo</b> e preservação digital de 
+    <b>dados acessados uma ou duas vezes por ano</b>. Essa storage class é
+    o armazenamento de <b>menor custo na nuvem AWS</b>. Com recuperação de dados 
+    de <b>12 a 48 horas</b>. Todos os objetos dessa storage class são replicados 
+    e armazenados em pelo menos <b>três Zonas de Disponibilidade</b> 
+    geograficamente dispersas.
+  </p>
+</details>
 
-- O **S3 Outposts** oferece armazenamento de objetos para seu **ambiente**
-  **on-premises do AWS Outposts**;
+> _As classes do S3 Glacier são projetadas para serem as de menor custo do AWS S3._
 
 ### Amazon Elastic File System (Amazon EFS)
 

@@ -1,17 +1,29 @@
 # Segurança
 
-**Responsabilidade da AWS:**
+<details>
+  <summary><b>Responsabilidade da AWS</b></summary>
+  <p>
+    <ul>
+    <li>Software: computação, armazenamento, banco de dados, rede;</li>
+    <li>Hardware: Regiões, Zonas de Disponibilidade, locais de borda;</li>
+    </ul>
+  </p>
+</details>
 
-- Software: computação, armazenamento, banco de dados, rede;
-- Hardware: Regiões, Zonas de Disponibilidade, locais de borda;
-
-**Responsabilidade do cliente:**
-
-- Seus dados
-- Plataforma, aplicações, Identity and Access Management (IAM)
-- Configuração de sistemas operacionais, rede e firewall
-- Criptografia de dados no lado do cliente, criptografia de dados no lado do
-  servidor e proteção de tráfego de rede;
+<details>
+  <summary><b>Responsabilidade do cliente</b></summary>
+  <p>
+    <ul>
+      <li>Dados pessoais;</li>
+      <li>Plataforma, aplicações e Identity and Access Management (IAM);</li>
+      <li>Configuração de sistemas operacionais, rede e firewall;</li>
+      <li>
+        Criptografia de dados no lado do cliente, criptografia de dados no lado 
+        do servidor e proteção de tráfego de rede;
+      </li>
+    </ul>
+  </p>
+</details>
 
 Em resumo, a **AWS cuida da segurança da nuvem e você cuida da segurança na nuvem**,
 da forma como você utiliza os recursos mantidos pela AWS.
