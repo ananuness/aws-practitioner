@@ -147,7 +147,7 @@ dispositivos consistem em:
 <details>
   <summary><b>AWS Snowcone</b></summary>
   <p>
-    é um dispositivo <b>pequeno, robusto e seguro</b> para transferência de 
+    É um dispositivo <b>pequeno, robusto e seguro</b> para transferência de 
     dados e computação de borda. Ele tem 2 CPUs, 4 GB de memória e
     <b>até 14 TB de armazenamento</b> utilizável.
   </p>
@@ -155,7 +155,7 @@ dispositivos consistem em:
 
 <details>
   <summary><b>AWS Snowball</b></summary>
-  <p>oferece dois tipos de dispositivos:</p>
+  <p>Oferece dois tipos de dispositivos:</p>
   <ul>
     <li>
       <b>Snowball Edge Storage Optimized</b> são ideais para
@@ -203,7 +203,7 @@ dispositivos consistem em:
 <details>
   <summary><b>AWS Snowmobile</b></summary>
   <p>
-    é um serviço de <b>transferência dados na escala de exabytes</b> usado para 
+    É um serviço de <b>transferência dados na escala de exabytes</b> usado para 
     mover grandes quantidades de dados para a nuvem AWS. Você pode transferir 
     <b>até 100 petabytes de dados por Snowmobile</b>, um contêiner de transporte 
     reforçado com 13,71 metros de comprimento puxado por um caminhão semirreboque.
