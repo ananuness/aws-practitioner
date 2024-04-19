@@ -1,7 +1,5 @@
 # Migração
 
-## Migração
-
 ### AWS Cloud Adoption Framework (CAF)
 
 O AWS CAF existe para **orientar a empresa** e para que a migração para a AWS
